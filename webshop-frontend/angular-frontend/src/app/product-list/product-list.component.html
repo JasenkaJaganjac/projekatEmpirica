@@ -1,0 +1,61 @@
+<div class="row" style="width: 100%;">
+    <div class="column left product">
+      
+      <div class="proizvod" *ngFor = "let product of products" [class.selected]="product === selectedProduct"
+      (click)="onSelect(product)">
+        <div class="slika">
+          <img src="{{product.imageURL}}">
+        </div>
+        <div class="text">
+          <h4>{{ product.name }}</h4>
+        </div>
+                       
+      </div>
+      
+   
+      
+      
+    </div>
+    
+    
+    
+
+         <div class="column middle product">
+            
+            <div class="selected" *ngIf="selectedProduct">
+                
+                <div class="selected slika" >
+                  <img src="{{selectedProduct.imageURL }}">
+                </div>
+                <div class="text">
+                    <h1 class="text-center">{{selectedProduct.name }}</h1>
+                    <br>
+                  <h5>Cijena: </h5>
+                  <p class="cijena"> {{selectedProduct.originalPrice}} KM</p>
+                  <br>
+                  <button> Dodaj u košaricu</button>
+                  <br>
+                  <p style="padding-top: 20px; font-size: 14px;">{{selectedProduct.description }}</p>
+                </div>
+                
+              </div>
+              
+             </div>
+
+    <div class="column right product">
+      
+          <div class="card">
+            <h2>Naši partneri</h2>
+            <p>Za više informacija o proizvodima, posjetite stranice naših partnera</p>
+            <a  href="https://www.eau-thermale-avene.ba/" >
+              <img alt="avene logo" src="assets/img/avene-logo.png" width="100%" ></a>
+              
+              <a  href="https://www.laroche-posay.com.hr/" >
+                <img  alt="lrp logo" src="assets/img/lrp-logo.png" width="100%" ></a>
+              <a  href="https://www.vichy.hr/" >
+                <img alt="vichy logo" src="assets/img/vichy-logo.jpg" width="100%" ></a>
+            
+            
+          </div>
+    </div>
+  </div>

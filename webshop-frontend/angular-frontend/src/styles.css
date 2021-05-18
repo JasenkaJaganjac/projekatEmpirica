@@ -1,0 +1,298 @@
+/* You can add global styles to this file, and also import other style files */
+
+/*import bootstrap-a*/
+@import "~bootstrap/dist/css/bootstrap.min.css"; 
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial;
+    padding: 0px;
+    background-color: #009ccc;
+  }
+  
+  p{
+    font-size: 18px;
+  }
+  .header {
+    padding: 5px;
+    overflow:hidden;
+    background: #ccf3ff;
+  }
+  
+  .header h1 {
+    font-size: 50px;
+    color: #004d64;
+  }
+  
+.headleft{
+    float: left;
+width: 75%;
+}
+.headright{
+    float: left;
+width: 25%;
+}
+
+.fa {
+    padding: 10px;
+    font-size: 25px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+  
+  
+  .fa:hover {
+    opacity: 0.5;
+  }
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+  
+  .fa-pinterest {
+    background: #cb2027;
+    color: white;
+  }
+
+
+  .topnav {
+    overflow: hidden;
+    background-color: #004d64;
+    font-weight: bold;
+    font-size: large;
+  }
+  
+  /* Style the topnav links */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change color on hover */
+  .topnav a:hover {
+    background-color: #ccf3ff;
+    color: #004d64;
+  }
+  
+  /* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 5px;
+  }
+  
+  
+  .column.left {
+    width: 15%;
+    background-color: #009ccc;
+    padding-top: 5px;
+  }
+  
+  .column.right {
+    width: 25%;
+    background-color: #009ccc;
+  }
+
+  .column.right.product{
+    width: 25%;
+    background-color: #009ccc;
+  }
+  .column.right img{
+    padding-top: 30px;
+  }
+  .column.middle {
+    width: 60%;
+    background-color: #009ccc;
+  }
+  
+  .column.middle.product {
+    width: 50%;
+    background-color: #ccf3ff;
+    margin-top: 25px;
+  }
+.column.left img{
+    max-width: 100%;
+    border-radius: 50%;   
+}
+
+.proizvod{
+  
+  padding: 3%;
+  display:flex;
+  align-items:center;
+  
+  margin-bottom: 10px;
+}
+.cijena {
+color: #004d64;
+font-weight: 800;
+font-family: Tahoma, Geneva, Verdana, sans-serif;
+font-size: x-large;
+}
+.slika {
+  flex-basis: 25%
+}
+.text{
+  font-size: 12px;
+  padding-left: 20px;
+}
+.slika img{
+  max-width: 100%;
+  border-radius: 0%;   
+}
+
+.selected{
+  padding: 3%;
+  display:flex;
+  
+  
+  
+}
+
+.selected.slika {
+  flex-basis: 150%
+}
+
+.column.middle .card{
+  background-color: #e6f9ff;
+}
+.column .card{
+  background-color: #ccf3ff;
+}
+.column.middle img{
+    max-width: 100%;
+    border-radius: 00%;
+    
+    
+}
+
+.proizvod{
+  background-color: #ccf3ff;
+}
+.card h4{
+    text-align: center;
+}
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  iframe {
+    height:200px;
+    max-width:100%;
+   }
+  .card {
+    background-color: white;
+    padding: 0px;
+    margin-top: 5px;
+  }
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column.side, .column.middle {
+      width: 100%;
+    }
+  }
+  
+  .column.left.product{
+    width: 25%;
+    background-color: #009ccc;
+  }
+  .column.left.product img{
+    border-radius: 10%;
+    max-width: 100%;
+  }
+  /* Add a card effect for articles */
+  .card {
+    background-color: white;
+    padding: 20px;
+    
+  }
+  
+  .row{
+      width: 100%;
+      margin: 0;
+  }
+  
+  /* Footer */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: #004d64;
+    margin-top: 20px;
+    color: #ccf3ff;
+    
+    
+    font-family: 'Courier New', Courier, monospace;
+  }
+  input[type=text], select {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccf3ff;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #ccf3ff;
+  }
+  
+  input[type=submit] {
+    width: 50%;
+    background-color: #004d64;
+    color: #ccf3ff;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #009ccc;
+    border: 1px solid#004d64;
+  }
+  textarea {
+    width: 50%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #004d64;
+    border-radius: 4px;
+    background-color: #ccf3ff;
+    font-size: 16px;
+    resize: none;
+  }
+  form{
+    font-size: 2rem;
+  }
+  
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 400px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+  }

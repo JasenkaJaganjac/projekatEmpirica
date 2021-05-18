@@ -1,0 +1,24 @@
+package com.example.demo.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.example.demo.repository.TicketRepository;
+
+@CrossOrigin(origins = "http://localhost:4200")
+@RestController
+@RequestMapping("/api/v1/ticket")
+public class TicketController {
+	
+	@Autowired
+	private TicketRepository ticketRepository;
+	
+	@PostMapping("/tickets")
+	public Ticket createTicket(Ticket ticket) {
+		return ticketRepository.save(ticket);
+	}
+
+}
